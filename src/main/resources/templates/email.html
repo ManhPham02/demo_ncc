@@ -1,0 +1,86 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Sending Email with Thymeleaf HTML Template Example</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <!-- use the font -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 48px;
+        }
+
+        #account {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        #account th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        #account td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+
+    </style>
+</head>
+<body style="margin: 0; padding: 0;">
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
+    <tr>
+        <td align="center" bgcolor="red" style="padding: 40px 0 30px 0;">
+            <img src="https://career.ncc.asia/wp-content/uploads/2021/03/logo.png" alt="ncc" style="display: block;"/>
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#eaeaea" style="padding: 40px 30px 40px 30px;">
+            <p>Dear <b th:text="${name}">Manh</b></p>
+<!--            <p>Welcome to the company, we are happy that you have become a member of the <b>NCC</b> family</p>-->
+            <p th:text="${company}"></p>
+            <p>This is your account:</p>
+            <p>
+            <table id="account">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Account</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>Username</th>
+                    <td th:text="${username}">manh</td>
+                </tr>
+                <tr>
+                    <th>Password</th>
+                    <td th:text="${password}">Jacob</td>
+                </tr>
+                <tr>
+                    <th>Code</th>
+                    <td th:text="${code}">2222</td>
+                </tr>
+                </tbody>
+            </table>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#777777" style="padding: 30px 30px 30px 30px;">
+            <p th:text="${subscriptionDate}"></p>
+            <p>NCC</p>
+            <p>Thanks</p>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          batch_size: 50
+          batch_versioned_data:truehibernate:
+        show_sql: true
+      ddl-auto: update
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 149441192896-sg1tr5rl77epis42gmbu7vnkfb7dh9g1.apps.googleusercontent.com
+            clientSecret: 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
+server:
+  port: 9090
+
+data: Test get value from application-common.yml
+
+mail:
+  host: smtp.gmail.com
+  port: 587
+  username: manhpdph15069@fpt.edu.vn
+  password: mklamanh
+
+

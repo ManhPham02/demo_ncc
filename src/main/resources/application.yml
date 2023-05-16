@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    include:
+      - common
+      - local
+    active: local
+#  profiles:
+#    include:
+#          - common
+#          - hrk
+#    active: hrk
+

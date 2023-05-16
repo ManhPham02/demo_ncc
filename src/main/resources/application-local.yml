@@ -1,0 +1,21 @@
+spring:
+  datasource:
+      driverClassName: org.postgresql.Driver
+      url: jdbc:postgresql://localhost:5432/postgres
+      username: postgres
+      password: 1
+  sql:
+    init:
+      platform: postgres
+#  mvc:
+#    pathmatch:
+#      matching-strategy: ant_path_matcher
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+
+
+
+

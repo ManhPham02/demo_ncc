@@ -1,0 +1,13 @@
+spring:
+  datasource:
+      driverClassName: org.postgresql.Driver
+      url: jdbc:postgresql://ec2-44-195-132-31.compute-1.amazonaws.com:5432/da34065bj7s4lh
+      username: pfsniipmwcyjlk
+      password: 5cf291da819b8520bac47ddbd7c428eb02768043c0968c377f0f30bd7e7875e0
+      sql:
+        init:
+          platform: postgres
+
+#  mvc:
+#    pathmatch:
+#      matching-strategy: ant_path_matcher
